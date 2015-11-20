@@ -1,0 +1,204 @@
+/* ----------------------------------- */
+/*            BASIC SETUP              */
+/* ----------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: "Lato", "Arial, Helvetica, sans-serif";
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------- */
+/*         REUSABLE COMPONENTS         */
+/* ----------------------------------- */
+
+.row {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*              HEADERS                */
+
+h1 {
+	margin: 0;
+	padding: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 270%;
+    font-weight: 300;
+    margin-left: 20%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h1:after {
+    content: " ";
+    height: 2px;
+    width: 850px;
+    background-color: #2980b9;
+    display: block;
+    margin-left: -30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+/*              BUTTONS                */
+
+.btn:link,
+.btn:visited {
+    border: 1px solid #2980b9;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: border 0.2s, background-color 0.2s, color 0.2s; 
+}
+
+.btn.btn-full:link,
+.btn.btn-full:visited {
+    background-color: #2980b9;
+    color: #fff; 
+}
+
+.btn.btn-empty:link,
+.btn.btn-empty:visited {
+    color: #2980b9; 
+}
+
+a.btn.btn-full:hover,
+a.btn.btn-full:active,
+a.btn.btn-empty:hover,
+a.btn.btn-empty:active {
+    background-color: #0d293c;
+    color: #fff;
+    border: 1px solid #0d293c;
+}
+
+/* ----------------------------------- */
+/*               HEADER                */
+/* ----------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/composition.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header .header-text {
+    width: 1200px;  
+    position: absolute;
+    top: 35%;
+    left: 12%;
+}
+
+header .header-text p {
+    font-size: 120%;
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 60px;
+    margin-left: 30%;
+}
+
+header .header-text .btn.first {
+    margin-left: 30%;
+}
+
+/*              MAIN NAV               */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 110%;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ccc;
+    padding: 12px 0;
+    border-bottom: 3px solid transparent;
+}
+
+.main-nav li a:link:after,
+.main-nav li a:visited:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    margin-top: 12px;
+} 
+
+.main-nav li a:hover:after,
+.main-nav li a:active:after {
+    width: 100%;
+    background: #2980b9;
+}
+
+/*              SOCIAL NAV             */
+
+.social-nav {
+    float: left;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.social-nav li {
+    font-size: 100%;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.social-nav li a:link,
+.social-nav li a:visited {
+    color: #ccc;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-linkedin:hover {
+    color: #007bb5;
+}
+
+.ion-social-github:hover {
+    color: #4078c0;
+}
+
+.ion-social-codepen-outline:hover {
+    color: #2980b9;
+}
+
+.ion-code:hover {
+    color: #4a2b0f;
+}
